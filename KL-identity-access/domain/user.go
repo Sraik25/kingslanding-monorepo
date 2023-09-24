@@ -10,6 +10,7 @@ package domain
 type User struct {
 	username string
 	password string
+	person   Person
 }
 
 //#region Getter and Setter
