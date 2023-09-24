@@ -1,4 +1,4 @@
-package domain
+package identity
 
 // TODO:
 // Tenants allow for the registration of many users by invitation.
@@ -9,6 +9,10 @@ type Tenant struct {
 	name   string
 	active bool
 }
+
+//#region Constructor
+
+//#endregion
 
 //#region Getter and Setter
 
@@ -21,6 +25,8 @@ func (t *Tenant) SetName(name string) {
 }
 
 //#endregion
+
+// #region Methods
 
 func (t *Tenant) Active() error {
 	// TODO: implement me
@@ -40,3 +46,5 @@ func (t *Tenant) RegisterUser() (*User, error) {
 	// TODO: implement me
 	return nil, nil
 }
+
+//#endregion
