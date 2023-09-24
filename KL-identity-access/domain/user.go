@@ -8,4 +8,45 @@ package domain
 // User security credentials (passwords) may be changed.
 
 type User struct {
+	username string
+	password string
 }
+
+//#region Getter and Setter
+
+func (u *User) Username() string {
+	return u.username
+}
+
+func (u *User) SetUsername(username string) {
+	u.username = username
+}
+
+func (u *User) Password() string {
+	return u.password
+}
+
+func (u *User) SetPassword(password string) {
+	u.password = password
+}
+
+//#endregion
+
+// #region Methods User
+
+func (u *User) ChangePassword(currentPassword, changedPassword string) error {
+	// TODO: implement me
+	return nil
+}
+
+func (u *User) ChangePersonalName(changedName string) error {
+	// TODO: implement me
+	return nil
+}
+
+func (u *User) ChangePersonalContactInformation(changedContactInformation any) error {
+	// TODO: implement me
+	return nil
+}
+
+//#endregion
