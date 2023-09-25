@@ -26,3 +26,10 @@ func (a Assertion) AssertArgumentLengthMinAndMax(val string, min, max int, err e
 	}
 	return nil
 }
+
+func (a Assertion) AssertArgumentNotNull(val any, err error) error {
+	if val == nil {
+		return err
+	}
+	return nil
+}
