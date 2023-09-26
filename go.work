@@ -1,6 +1,7 @@
 go 1.20
 
 use (
+	./KL-collaboration
 	./KL-common
 	./KL-identity-access
 )
